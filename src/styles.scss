@@ -1,9 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&family=Roboto&display=swap");
+
 body {
-  background-image: url("https://images2.alphacoders.com/979/thumb-1920-979205.jpg");
+  background-image: url("https://img.freepik.com/fotos-premium/fondo-pared-cemento-pintado-color-azul-celeste-textura-color-pastel_92056-106.jpg?w=2000");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
   height: 84vh;
+  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }

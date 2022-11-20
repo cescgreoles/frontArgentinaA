@@ -1,0 +1,32 @@
+.container-detail {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  align-items: center;
+
+  color: white;
+}
+
+.container-img-detail {
+  padding: 30px;
+
+  .img-detail {
+    border: 2px solid;
+    border-radius: 20px;
+  }
+}
+
+.container-p-detail {
+  padding: 30px;
+  font-size: 25px;
+}
+
+.button-back {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  .button-back-item {
+    text-decoration: none;
+    color: white;
+  }
+}

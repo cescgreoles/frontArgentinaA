@@ -1,6 +1,12 @@
-<!-- <div ngClass="general-characters">
-  <div *ngFor="let item of myCharacters" ngClass="characters">
+<div ngClass="general-players">
+  <div *ngFor="let item of myPlayers" ngClass="players">
     <p>{{ item.name }}</p>
-    <button routerLink="/characters/{{ item.id }}">Show More</button>
+    <div ngClass="img-div">
+      <img src="{{ item.img }}" alt="{{ item.img }}" ngClass="img-players" />
+    </div>
+
+    <button routerLink="/jugadores/{{ item.id }}" ngClass="button-mas">
+      Más
+    </button>
   </div>
-</div> -->
+</div>

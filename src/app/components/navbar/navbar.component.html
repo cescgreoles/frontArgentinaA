@@ -1,5 +1,17 @@
 <nav ngClass="navbar">
-  <a routerLink="" ngClass="navbar-item">Seleccion</a>
-  <a routerLink="jugadores" ngClass="navbar-item">Jugadores</a>
-  <a routerLink="history" ngClass="navbar-item">Historia</a>
+  <div ngClass="div-img">
+    <a routerLink="seleccion">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/3/31/Selecci%C3%B3n_de_Argentina_%28Escudo%29.png"
+        alt="img-escudo"
+        width="50px"
+      />
+    </a>
+  </div>
+  <div ngClass="div-navbar-items">
+    <a routerLink="" ngClass="navbar-item">Seleccion</a>
+    <a routerLink="jugadores" ngClass="navbar-item">Jugadores</a>
+
+    <a routerLink="history" ngClass="navbar-item">Historia</a>
+  </div>
 </nav>

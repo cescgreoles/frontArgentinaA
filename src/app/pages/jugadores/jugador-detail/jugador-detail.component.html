@@ -1,1 +1,21 @@
-<p>jugador-detail works!</p>
+<div ngClass="button-back">
+  <a routerLink="/jugadores" ngClass="button-back-item">Atras</a>
+</div>
+
+<div ngClass="container-detail">
+  <div ngClass="container-img-detail">
+    <img
+      src="{{ myPlayer?.img }}"
+      alt="{{ myPlayer?.name }}"
+      width="300"
+      ngClass="img-detail"
+    />
+  </div>
+  <div ngClass="container-p-detail">
+    <p>Nombre: {{ myPlayer?.name }}</p>
+    <p>Edad: {{ myPlayer?.age }}</p>
+    <p>Equipo: {{ myPlayer?.team }}</p>
+    <p>Dorsal: {{ myPlayer?.dorsal }}</p>
+    <p>Posicion: {{ myPlayer?.position }}</p>
+  </div>
+</div>

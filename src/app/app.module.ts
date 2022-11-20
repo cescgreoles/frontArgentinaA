@@ -9,6 +9,8 @@ import { HistoryComponent } from './pages/history/history.component';
 import { NuevoJugadorComponent } from './pages/jugadores/nuevo-jugador/nuevo-jugador.component';
 import { JugadorDetailComponent } from './pages/jugadores/jugador-detail/jugador-detail.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     HistoryComponent,
     NuevoJugadorComponent,
     JugadorDetailComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
