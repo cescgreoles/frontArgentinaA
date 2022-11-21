@@ -17,5 +17,7 @@
     <p>Equipo: {{ myPlayer?.team }}</p>
     <p>Dorsal: {{ myPlayer?.dorsal }}</p>
     <p>Posicion: {{ myPlayer?.position }}</p>
+    <button class="button-delete" (click)="deletePlayer()">Delete</button>
+    <a routerLink="/update-player">Update</a>
   </div>
 </div>

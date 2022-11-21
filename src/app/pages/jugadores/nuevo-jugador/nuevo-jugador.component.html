@@ -1,1 +1,40 @@
-<p>nuevo-jugador works!</p>
+<div ngClass="button-back">
+  <a routerLink="/jugadores" ngClass="button-back-item">Atras</a>
+</div>
+
+<form [formGroup]="playerForm" (ngSubmit)="onSubmit()" ngClass="form-new">
+  <h2>CREA UN NUEVO JUGADOR</h2>
+  <div ngClass="form--box">
+    <label
+      >Nombre
+      <input type="text" formControlName="name" />
+    </label>
+
+    <label
+      >Imagen
+      <input type="img" formControlName="img" />
+    </label>
+
+    <label
+      >Edad
+      <input type="age" formControlName="age" />
+    </label>
+
+    <label
+      >Equipo
+      <input type="text" formControlName="team" />
+    </label>
+
+    <label
+      >Dorsal
+      <input type="text" formControlName="dorsal" />
+    </label>
+
+    <label
+      >Position
+      <input type="text" formControlName="position" />
+    </label>
+  </div>
+
+  <button>Update Players</button>
+</form>

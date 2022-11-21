@@ -1,0 +1,28 @@
+.label-input {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 10px;
+  color: white;
+}
+
+.form-new {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.button-back {
+  display: flex;
+
+  padding: 40px;
+}
+
+.button-back-item {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  font-size: 22px;
+  border-bottom: 2px solid white;
+}

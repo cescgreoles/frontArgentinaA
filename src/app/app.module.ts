@@ -10,7 +10,8 @@ import { NuevoJugadorComponent } from './pages/jugadores/nuevo-jugador/nuevo-jug
 import { JugadorDetailComponent } from './pages/jugadores/jugador-detail/jugador-detail.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UpdatePlayerComponent } from './pages/jugadores/update-player/update-player.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,15 @@ import { FormsModule } from '@angular/forms';
     NuevoJugadorComponent,
     JugadorDetailComponent,
     NavbarComponent,
+    UpdatePlayerComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,3 +1,5 @@
+import { UpdatePlayerComponent } from './pages/jugadores/update-player/update-player.component';
+import { NuevoJugadorComponent } from './pages/jugadores/nuevo-jugador/nuevo-jugador.component';
 import { JugadorDetailComponent } from './pages/jugadores/jugador-detail/jugador-detail.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { JugadoresComponent } from './pages/jugadores/jugadores.component';
@@ -10,6 +12,8 @@ const routes: Routes = [
   { path: 'jugadores', component: JugadoresComponent },
   { path: 'jugadores/:id', component: JugadorDetailComponent },
   { path: 'history', component: HistoryComponent },
+  { path: 'nuevo-jugador', component: NuevoJugadorComponent },
+  { path: 'update-player', component: UpdatePlayerComponent },
 ];
 
 @NgModule({

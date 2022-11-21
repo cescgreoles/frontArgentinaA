@@ -1,0 +1,13 @@
+.button-back {
+  display: flex;
+
+  padding: 40px;
+
+  .button-back-item {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+    border-bottom: 2px solid white;
+  }
+}
