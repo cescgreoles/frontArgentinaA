@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'jugadores/:id', component: JugadorDetailComponent },
   { path: 'history', component: HistoryComponent },
   { path: 'nuevo-jugador', component: NuevoJugadorComponent },
-  { path: 'update-player', component: UpdatePlayerComponent },
+  { path: 'updatePlayer/:id', component: UpdatePlayerComponent },
 ];
 
 @NgModule({

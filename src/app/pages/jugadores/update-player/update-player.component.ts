@@ -28,7 +28,10 @@ export class UpdatePlayerComponent implements OnInit {
         this.playerForm = this.formBuilder.group({
           name: [this.updatedPlayer.name, [Validators.required]],
           img: [this.updatedPlayer.img, [Validators.required]],
-          race: [this.updatedPlayer.race, [Validators.required]],
+          team: [this.updatedPlayer.team, [Validators.required]],
+          age: [this.updatedPlayer.age, [Validators.required]],
+          dorsal: [this.updatedPlayer.dorsal, [Validators.required]],
+          position: [this.updatedPlayer.position, [Validators.required]],
         });
       });
     });
@@ -40,9 +43,9 @@ export class UpdatePlayerComponent implements OnInit {
 
   onSubmit() {
     const formData = new FormData();
-    formData.append('img', this.playerForm.get('img')?.value);
-    formData.append('name', this.playerForm.get('name')?.value);
-    formData.append('race', this.playerForm.get('race')?.value);
+    // formData.append('img', this.playerForm.get('img')?.value);
+    // formData.append('name', this.playerForm.get('name')?.value);
+    // formData.append('race', this.playerForm.get('race')?.value);
     console.log(formData);
     this.JugadoresService.putPlayer(this.id, formData).subscribe(() =>
       this.router.navigate(['/jugadores'])

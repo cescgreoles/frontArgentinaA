@@ -3,35 +3,38 @@
 </div>
 
 <form [formGroup]="playerForm" (ngSubmit)="onSubmit()" ngClass="form-new">
-  <label
-    >Nombre
-    <input type="text" formControlName="name" />
-  </label>
+  <h2>EDITA UN JUGADOR</h2>
+  <div ngClass="form--box">
+    <label
+      >Nombre
+      <input type="text" formControlName="name" />
+    </label>
 
-  <label
-    >Imagen
-    <input type="img" formControlName="img" />
-  </label>
+    <label
+      >Imagen
+      <input type="img" formControlName="img" />
+    </label>
 
-  <label
-    >Edad
-    <input type="age" formControlName="age" />
-  </label>
+    <label
+      >Edad
+      <input type="age" formControlName="age" />
+    </label>
 
-  <label
-    >Equipo
-    <input type="text" formControlName="team" />
-  </label>
+    <label
+      >Equipo
+      <input type="text" formControlName="team" />
+    </label>
 
-  <label
-    >Dorsal
-    <input type="text" formControlName="dorsal" />
-  </label>
+    <label
+      >Dorsal
+      <input type="text" formControlName="dorsal" />
+    </label>
 
-  <label
-    >Position
-    <input type="text" formControlName="position" />
-  </label>
+    <label
+      >Position
+      <input type="text" formControlName="position" />
+    </label>
+  </div>
 
-  <button>Update Players</button>
+  <button>Update jugadores</button>
 </form>

@@ -18,6 +18,11 @@
     <p>Dorsal: {{ myPlayer?.dorsal }}</p>
     <p>Posicion: {{ myPlayer?.position }}</p>
     <button class="button-delete" (click)="deletePlayer()">Delete</button>
-    <a routerLink="/update-player">Update</a>
+    <button
+      class="button-delete"
+      routerLink="/updatePlayer/{{ myPlayer?._id }}"
+    >
+      Update
+    </button>
   </div>
 </div>
