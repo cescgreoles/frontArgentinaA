@@ -42,18 +42,9 @@ export class NuevoJugadorComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.playerForm);
-
-    const formData = JSON.stringify(this.playerForm.value);
-    // formData.append('img', this.playerForm.get('img')?.value);
-    // formData.append('name', this.playerForm.get('name')?.value);
-    // formData.append('age', this.playerForm.get('age')?.value);
-    // formData.append('team', this.playerForm.get('team')?.value);
-    // formData.append('dorsal', this.playerForm.get('dorsal')?.value);
-    // formData.append('position', this.playerForm.get('position')?.value);
-    console.log(formData);
+    const datos = this.playerForm.value;
     this.jugadoresService
-      .postPlayer(formData)
+      .postPlayer(datos)
       .subscribe(() => this.router.navigate(['/jugadores']));
   }
 }

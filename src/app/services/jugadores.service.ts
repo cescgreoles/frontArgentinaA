@@ -14,8 +14,6 @@ export class JugadoresService {
     return this.http.get('http://localhost:3000/players/' + id);
   }
   public postPlayer(newPlayer: any) {
-    console.log(newPlayer);
-
     return this.http.post('http://localhost:3000/players/create', newPlayer);
   }
   public deletePlayer(id: string) {

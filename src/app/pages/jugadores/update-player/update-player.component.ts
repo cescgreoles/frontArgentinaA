@@ -42,12 +42,9 @@ export class UpdatePlayerComponent implements OnInit {
   }
 
   onSubmit() {
-    const formData = new FormData();
-    // formData.append('img', this.playerForm.get('img')?.value);
-    // formData.append('name', this.playerForm.get('name')?.value);
-    // formData.append('race', this.playerForm.get('race')?.value);
-    console.log(formData);
-    this.JugadoresService.putPlayer(this.id, formData).subscribe(() =>
+    const datos = this.playerForm.value;
+
+    this.JugadoresService.putPlayer(this.id, datos).subscribe(() =>
       this.router.navigate(['/jugadores'])
     );
   }
