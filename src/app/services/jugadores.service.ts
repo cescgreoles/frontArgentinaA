@@ -21,7 +21,7 @@ export class JugadoresService {
   }
   public putPlayer(id: string, updatedPlayer: any) {
     return this.http.put(
-      'http://localhost:3000/players/edit/:' + id,
+      'http://localhost:3000/players/edit/' + id,
       updatedPlayer
     );
   }
