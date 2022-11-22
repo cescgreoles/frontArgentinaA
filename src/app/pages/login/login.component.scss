@@ -1,0 +1,65 @@
+.button-back {
+  display: flex;
+
+  padding: 40px;
+
+  .button-back-item {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+    border-bottom: 2px solid white;
+  }
+}
+
+form {
+  background-color: rgba(255, 235, 205, 0.513);
+  border: 1px solid #414445;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 1000px;
+  margin: 5% auto;
+  padding: 1em;
+  h2 {
+    text-align: center;
+  }
+  .form--box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    label {
+      width: 50%;
+      padding: 0.6em;
+      input {
+        display: flex;
+        width: 100%;
+        height: 20px;
+        padding: 0.2em;
+      }
+    }
+  }
+  button {
+    margin-top: 2em;
+    width: fit-content;
+    background: transparent;
+    letter-spacing: 2px;
+    border: none;
+    text-transform: uppercase;
+    color: #363636;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #363636;
+
+    cursor: pointer;
+
+    &:hover {
+      background-image: url("https://media.istockphoto.com/id/1367756016/vector/yellow-watercolor-background-illustration.jpg?s=612x612&w=0&k=20&c=VAAg0xLzB5ky_HaKrLGLrJ2g3MQ8V4jjjYLmqnGN6Uk=%22");
+      transition: all 0.3s;
+      border-radius: 12px;
+      padding: 0.4em;
+    }
+  }
+}

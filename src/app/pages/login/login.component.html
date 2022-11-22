@@ -1,0 +1,13 @@
+<div ngClass="button-back">
+  <a routerLink="/jugadores" ngClass="button-back-item">Atras</a>
+</div>
+
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <h2>LOGIN</h2>
+  <div ngClass="form--box">
+    <label> Email <input type="text" formControlName="email" /></label>
+    <label> Password<input type="text" formControlName="password" /></label>
+  </div>
+
+  <button>login</button>
+</form>

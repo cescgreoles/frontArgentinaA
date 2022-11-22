@@ -1,3 +1,5 @@
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
 import { UpdatePlayerComponent } from './pages/jugadores/update-player/update-player.component';
 import { NuevoJugadorComponent } from './pages/jugadores/nuevo-jugador/nuevo-jugador.component';
 import { JugadorDetailComponent } from './pages/jugadores/jugador-detail/jugador-detail.component';
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'history', component: HistoryComponent },
   { path: 'nuevo-jugador', component: NuevoJugadorComponent },
   { path: 'updatePlayer/:id', component: UpdatePlayerComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
 ];
 
 @NgModule({
